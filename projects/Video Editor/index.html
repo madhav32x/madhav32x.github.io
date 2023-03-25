@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Madhav Jhawar</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="/stuff/icon.png">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Madhav <span>Jhawar</span></h2>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about/index.html">About</a></li>
+                <li><a href="/projects/index.html">Projects</a></li>
+                <li><a href="/portfolio/index.html">Portfolio</a></li>
+                <li><a href="/contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Projects</h1>
+            <br>
+            <div class="project">
+                <div class="project1">
+                    <a href="https://www.instagram.com/harrydotexe/"><img src="/stuff/icons/instagram.png"></a>
+                    <br>
+                    <a href="https://www.instagram.com/harrydotexe/" class="btn">@harrydotexe</a>
+                </div>
+                <div class="project2">
+                    <a href="#"> <video id="my-video" controls poster="/stuff/projects/poster.png">
+                        <source src="/stuff/projects/sui.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></a>
+                    <br>
+                    <a href="https://www.instagram.com/reel/Cmv-kXQhFGu/?utm_source=ig_web_copy_link" class="btn">Most viewed Edit</a>
+                </div>
+            </div>
+            </div>
+    </div>
+    <script>
+        var video = document.getElementById("my-video");
+
+        video.addEventListener("mouseenter", function() {
+         video.setAttribute("controls", "");
+        });
+
+        video.addEventListener("mouseleave", function() {
+         video.removeAttribute("controls");
+        });
+        video.addEventListener("ended", function() {
+        video.currentTime = 0;
+        video.poster = "poster.jpg";
+        });
+    </script>
+</body>
+</html>

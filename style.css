@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+.hero{
+    height:  100vh;
+    width: 100%;
+    background: rgb(0,0,0);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/stuff/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo{
+    color: white;
+    font-size: 65px;
+}
+span{
+    color: red;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+    transition: .3s;
+}
+
+
+.container{
+    width: 600px;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+}
+
+.container ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 30px;
+}
+
+.container ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.container ul li a:hover{
+    color: red;
+    transition: .3s;
+}
+
+.container ul li a:hover{
+    color: red;
+    transition: .3s;
+}
+
+.container ul li a:hover{
+    color: red;
+    transition: .3s;
+}
+
+hr{
+    color: white;
+    width: 100%;
+}
+
+h3{
+    color:white;
+    font-family: 'Chivo Mono', monospace;
+}
+h3 span{
+    color: red;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.socials{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    position: fixed;
+    left: 1000px;
+    bottom: 180px;
+}
+
+.socials h1{
+    color: white;
+    font-size: 50px;
+}
+
+.socials ul li a img{
+    height: 60px;
+    width: 60px;
+}
+
+img {
+    border:3px solid #000000;
+    border-radius: 15px;
+  }
+
+img:hover {
+    border:3px solid rgb(255, 0, 0);
+    transition: .3s;
+  }
+
+.socials h1 span{
+    color: rgb(255, 0, 0);
+  }

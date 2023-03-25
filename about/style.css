@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+body{
+    overflow-anchor: none;
+    overflow: hidden;
+}
+
+.hero{
+    height:  102vh;
+    width: 100%;
+    background: rgb(0,0,0);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/stuff/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo{
+    color: white;
+    font-size: 65px;
+}
+span{
+    color: red;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+    transition: .3s;
+}
+
+.container{
+    align-items: center;
+    border: 2px dashed #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+    min-height: 60vh;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    width: 1200px;
+    left: 160px;
+}
+
+.container h1{
+    color: whitesmoke;
+    font-size: 120px;
+    font-weight: bold;
+}
+.container h1:hover{
+    color: red;
+    transition: .3s;
+}
+
+.container h1 span:hover{
+    color: whitesmoke;
+    transition: .3s;
+}
+
+.container p{
+    color: white;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 25px;
+    font-weight: bold;
+}
+.container:before {
+    animation: rotatee 1.5s ease infinite;
+    background-color: #f8f8f8;
+    content: "";
+    position: absolute;
+}
+.container:before {
+    height: 80px;
+    left: -40px;
+    top: -40px;
+    width: 80px;
+}
+:before {
+    box-sizing: border-box;
+}
+@keyframes rotatee {
+    0%   {rotate: 0deg;}
+    25%  {rotate: 90deg;}
+    50%  {rotate: 90deg; height: 55px; width: 55px;}
+    75%  {rotate: 90deg;}
+    100% {rotate: 90deg;}
+}
+.container:after {
+    animation: rotate 1.5s ease infinite;
+    background-color: #f8f8f8;
+    content: "";
+    position: absolute;
+}
+.container:after {
+    bottom: -25px;
+    height: 50px;
+    right: -25px;
+    width: 50px;
+}
+:after {
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    0%   {rotate: 0deg;}
+    25%  {rotate: 90deg;}
+    50%  {rotate: 90deg; height: 65px; width: 65px;}
+    75%  {rotate: 90deg;}
+    100% {rotate: 90deg;}
+}
+

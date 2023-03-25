@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+body{
+    overflow-anchor: none;
+    overflow: hidden;
+}
+
+.hero{
+    height:  102vh;
+    width: 100%;
+    background: rgb(0,0,0);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/stuff/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo{
+    color: white;
+    font-size: 65px;
+}
+span{
+    color: red;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+    transition: .3s;
+}
+
+.form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    background:transparent;
+}
+
+form h1{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: white;
+    font-size: 16px;
+    width: 490px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    font-family: 'Chivo Mono', monospace;
+    resize: none;
+}
+
+form button{
+    padding: 15px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    font-family: 'Chivo Mono', monospace;
+}
+
+button:hover{
+    color: black;
+    transition: transform .5s,box-shadow .5s;
+    transition: .3s ease-in-out;
+    transform: translateY(-10px);
+    
+}
+
+.container{
+    align-items: center;
+    border: 2px dashed #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 570px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    width: 1200px;
+    left: 160px;
+    top: 40px;
+}
+
+.container:before {
+    animation: rotatee 1.5s ease infinite;
+    background-color: #f8f8f8;
+    content: "";
+    position: absolute;
+}
+.container:before {
+    height: 60px;
+    left: -30px;
+    top: -30px;
+    width: 60px;
+}
+:before {
+    box-sizing: border-box;
+}
+@keyframes rotatee {
+    0%   {rotate: 0deg;}
+    25%  {rotate: 90deg;}
+    50%  {rotate: 90deg; height: 55px; width: 55px;}
+    75%  {rotate: 90deg;}
+    100% {rotate: 90deg;}
+}
+.container:after {
+    animation: rotate 1.5s ease infinite;
+    background-color: #f8f8f8;
+    content: "";
+    position: absolute;
+}
+.container:after {
+    bottom: -25px;
+    height: 50px;
+    right: -25px;
+    width: 50px;
+}
+:after {
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    0%   {rotate: 0deg;}
+    25%  {rotate: 90deg;}
+    50%  {rotate: 90deg; height: 65px; width: 65px;}
+    75%  {rotate: 90deg;}
+    100% {rotate: 90deg;}
+}
